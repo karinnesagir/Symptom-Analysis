@@ -5,6 +5,7 @@ This repository contains code for leveraging Natural Language Processing (NLP) t
 
 ## Project Structure
 - `requirements.txt`: List of dependencies required to run the program.
+- `label_list.txt`" List of labels found in the dataset.
 - `inference.ipynb`: Script containing code for inferencing using the NER model.
 - `ner_model.ipynb`: Script containing code for the NER model architecture and training.
 - `viterbi_algorithm.ipynb`: Script containing code for the Viterbi algorithm implementation.
