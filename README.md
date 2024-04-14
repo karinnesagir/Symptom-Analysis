@@ -5,7 +5,6 @@ This repository contains code for leveraging Natural Language Processing (NLP) t
 
 ## Project Structure
 - `requirements.txt`: List of dependencies required to run the program.
-- `main.py`: Main script to execute the program and compare the NER model and Viterbi algorithm.
 - `ner_model.py`: Script containing code for the NER model architecture and training.
 - `viterbi_algorithm.py`: Script containing code for the Viterbi algorithm implementation.
 
