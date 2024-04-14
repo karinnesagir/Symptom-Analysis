@@ -1,12 +1,9 @@
 # Medical Symptom Analysis with NLP
 
 ## Introduction
-This repository contains code for leveraging Natural Language Processing (NLP) techniques to analyze medical symptoms. The program compares the performance of two models: a Named Entity Recognition (NER) model and the Viterbi algorithm for Part-of-Speech (POS) tagging.
+This repository contains code for leveraging Natural Language Processing (NLP) techniques to analyze medical symptoms. The program compares the performance of two models: a Named Entity Recognition (NER) model and the Viterbi algorithm as a baseline model for comparison.
 
 ## Project Structure
-- `data/`: Contains datasets used for training and evaluation.
-- `models/`: Includes pre-trained models and scripts for training new models.
-- `utils/`: Utility functions for data preprocessing, evaluation, and inference.
 - `requirements.txt`: List of dependencies required to run the program.
 - `main.py`: Main script to execute the program and compare the NER model and Viterbi algorithm.
 - `ner_model.py`: Script containing code for the NER model architecture and training.
