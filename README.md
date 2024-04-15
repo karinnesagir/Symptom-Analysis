@@ -7,7 +7,8 @@ This repository contains code for leveraging Natural Language Processing (NLP) t
 - `requirements.txt`: List of dependencies required to run the program.
 - `label_list.txt`" List of labels found in the dataset.
 - `inference.ipynb`: Script containing code for inferencing using the NER model.
-- `ner_model.ipynb`: Script containing code for the NER model architecture and training.
+- `NER.ipynb`: Script containing code for the NER model architecture and training.
+- `NER_KFold_Configs.ipynb`: Script containing code for the NER model architecture and training with KFold cross validation (5-Fold) and different configs.
 - `viterbi_algorithm.ipynb`: Script containing code for the Viterbi algorithm implementation.
 
 ## Installation
@@ -40,7 +41,7 @@ pip install -r requirements.txt
 
 ### Named Entity Recognition Using BERT
 
-#### Training
+#### Training (Default)
 To train the model, follow these steps:
 1. Open and run the `NER.ipynb` notebook.
 
@@ -52,6 +53,24 @@ To train the model, follow these steps:
    - **Weight Decay**: 0.01
    - **Tokenizer**: `bert-base-uncased`
    - **Data Collator**: Use `DataCollatorForTokenClassification` from the transformers library.
+
+#### Training (K-Fold Cross-Validation and Different Configs)
+To train the model, follow these steps:
+1. Open and run the `NER_KFold_Configs.ipynb` notebook.
+
+   Below is a table detailing each configuration:
+   | Configuration ID | Learning Rate | Batch Size | Epochs | Weight Decay |
+   |------------------|---------------|------------|--------|--------------|
+   | 1                | 2e-5          | 32         | 30     | 0.01         |
+   | 2                | 2e-5          | 32         | 30     | 0.02         |
+   | 3                | 2e-5          | 32         | 60     | 0.01         |
+   | 4                | 2e-5          | 32         | 60     | 0.02         |
+   | 5                | 2e-5          | 32         | 100    | 0.01         |
+
+   ##### Additional Notes
+   - The configurations are designed to test the robustness and efficiency of the model.
+   - K-fold cross-validation was used to address over-fitting and under-fitting during training. 
+
 
 #### Inferencing
 For model inference:
